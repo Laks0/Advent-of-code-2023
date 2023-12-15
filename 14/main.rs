@@ -18,12 +18,6 @@ fn main() {
     println!("Parte 2: {}", res2(&input));
 }
 
-fn print_map(map : &Vec<Vec<char>>) {
-    for line in map {
-        println!("{}", line.iter().collect::<String>());
-    }
-}
-
 fn res1(input : &Vec<String>) -> u32 {
     let mut res : u32 = 0;
 
@@ -44,8 +38,6 @@ fn res1(input : &Vec<String>) -> u32 {
 }
 
 fn res2(input : &Vec<String>) -> u32 {
-    let mut res : u32 = 0;
-
     let mut res : u32 = 0;
 
     let mut map : Vec<Vec<char>> = input.iter()
